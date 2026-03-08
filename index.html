@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiger Fortune Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">TIGER <span style="color: gold;">FORTUNE</span></h1>
+        
+        <div class="multiplier-display" id="multiplier">Multiplicador: 1x</div>
+        
+        <div class="slot-machine">
+            <div class="reel" id="reel1">?</div>
+            <div class="reel" id="reel2">?</div>
+            <div class="reel" id="reel3">?</div>
+        </div>
+
+        <div class="controls">
+            <div class="balance">Saldo: R$ <span id="balance">100</span></div>
+            <button onclick="spin()" id="spin-btn">GIRAR (R$ 5)</button>
+        </div>
+        
+        <div class="message" id="message">Tente a sua sorte!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
